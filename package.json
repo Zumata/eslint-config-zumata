@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-zumata",
+  "name": "@zumatawl/eslint-config-zumata",
   "version": "0.0.1",
   "description": "Zumata's ESLint Shareable Config",
   "main": "index.js",
