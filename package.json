@@ -1,0 +1,38 @@
+{
+  "name": "eslint-config-zumata",
+  "version": "0.0.1",
+  "description": "Zumata's ESLint Shareable Config",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:Zumata/eslint-config-zumata.git",
+    "type": "git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "zumata",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "motss <rong_sen.ng@zumata.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zumata/eslint-config-zumata/issues"
+  },
+  "homepage": "https://github.com/Zumata/eslint-config-zumata",
+  "dependencies": {
+    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-plugin-import": "^2.0.1"
+  },
+  "peerDependencies": {
+    "eslint": "^3.8.0",
+    "eslint-plugin-import": "^2.0.1"
+  },
+  "engines": {
+    "node": "^6.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.8.1"
+  }
+}
