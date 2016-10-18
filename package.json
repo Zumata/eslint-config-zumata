@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Zumata/eslint-config-zumata",
   "dependencies": {
+    "eslint": "^3.8.1",
     "eslint-config-airbnb-base": "^9.0.0",
     "eslint-plugin-import": "^2.0.1"
   },

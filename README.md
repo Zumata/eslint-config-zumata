@@ -4,38 +4,58 @@
 
 This package provides Airbnb's .eslintrc as an extensible shared config specifically for Zumata's Node.js modules.
 
-## Usage
+## Use case
 
-We export ___ONLY___ one ESLint configurations for your usage.
+This `ESLint` config file does not aim to reinvent the wheel to suit our internal purpose in Zumata when writing a Node.js module. It basically extends and modifies the widely known Airbnb's Javascript style guide by not including dependencies such as `eslint-plugin-jsx-a11y` and `eslint-plugin-react` which are not being used in linting any of our Node.js modules so that to keep our dependencies' hierarchy clean, tidy and small as possible.
 
-### eslint-config-zumata
+## Setup
+
+### Prerequisites
+
+Please make sure that you have the followings installed on your machine:
+
+-  `eslint > 3.4.0`
+- [`ESLint extension for your favorite text editor`](http://eslint.org/docs/user-guide/integrations)
+
+### Usage
+
+1. Create `.eslintrc.json` or `.eslintrc` (See [](http://eslint.org/docs/user-guide/configuring)) and add the following into the file:
+
+```json
+{
+  "extends": [ "zumata" ]
+}
+```
+
+2. Create `.eslintignore` to tell `ESLint` to skip linting the files inside directories. For example,
+
+```
+dist/**
+**/dist/**
+```
+
+3. Then install the required dependencies to start the integration.
+
+#### With [`NPM`](https://github.com/npm/npm):
+```sh
+npm install --save-dev eslint eslint-config-zumata
+```
+
+#### With [`Yarn`](https://github.com/yarnpkg/yarn):
+```sh
+yarn add --dev eslint eslint-config-zumata
+```
+
+4. `ESLint` should be up and running in your favorite text editor with all the config files needed. Enjoy #eslinting!~
+
+## eslint-config-zumata
 
 Our default export contains all of our ESLint rules, including ECMAScript 6+. It requires `eslint`, `eslint-plugin-import`, and `eslint-config-airbnb-base`.
-
-1. Ensure packages are installed with correct version numbers by running:
-  ```sh
-  (
-    export PKG=eslint-config-zumata;
-    npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
-  )
-  ```
-
-  Which produces and runs a command like:
-
-  ```sh
-  npm install --save-dev eslint-config-zumata eslint@^#.#.# eslint-plugin-import@^#.#.#
-  ```
-
-2. Add `"extends": "zumata"` to your .eslintrc
 
 See [Airbnb's Javascript styleguide](https://github.com/airbnb/javascript) and
 the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files)
 for more information.
 
-## Improving this config
+## License
 
-Consider adding test cases if you're making complicated rules changes, like anything involving regexes. Perhaps in a distant future, we could use literate programming to structure our README as test cases for our .eslintrc?
-
-You can run tests with `npm test`.
-
-You can make sure this module lints with itself using `npm run lint`.
+MIT
