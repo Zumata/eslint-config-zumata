@@ -19,31 +19,31 @@ Please make sure that you have the followings installed on your machine:
 
 ### Usage
 
-1. Create `.eslintrc.json` or `.eslintrc` (See [](http://eslint.org/docs/user-guide/configuring)) and add the following into the file:
+1. Create `.eslintrc.json` or `.eslintrc` (See [Configuring ESLint](http://eslint.org/docs/user-guide/configuring)) and add the following into the file:
 
-  ```json
-  {
-    "extends": [ "zumata" ]
-  }
-  ```
+    ```
+    {
+      "extends": [ "zumata" ]
+    }
+    ```
 
 2. Create `.eslintignore` to tell `ESLint` to skip linting the files inside directories. For example,
-  ```
-  dist/**
-  **dist/**
-  ```
+    ```
+    dist/**
+    **dist/**
+    ```
 
 3. Then install the required dependencies to start the integration.
 
-  #### With [`NPM`](https://github.com/npm/npm):
-  ```sh
-  npm install --save-dev eslint eslint-config-zumata
-  ```
+    #### With [`NPM`](https://github.com/npm/npm):
+    ```sh
+    npm install --save-dev eslint eslint-config-zumata
+    ```
 
-  #### With [`Yarn`](https://github.com/yarnpkg/yarn):
-  ```sh
-  yarn add --dev eslint eslint-config-zumata
-  ```
+    #### With [`Yarn`](https://github.com/yarnpkg/yarn):
+    ```sh
+    yarn add --dev eslint eslint-config-zumata
+    ```
 
 4. `ESLint` should be up and running in your favorite text editor with all the config files needed. Enjoy [#eslint](https://twitter.com/search?q=%23eslint&src=typd)ing!~
 
