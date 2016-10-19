@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zumata",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Zumata's ESLint Shareable Config",
   "main": "index.js",
   "repository": {
