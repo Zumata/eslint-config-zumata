@@ -30,7 +30,7 @@ Please make sure that you have the followings installed on your machine:
 2. Create `.eslintignore` to tell `ESLint` to skip linting the files inside directories. For example,
   ```
   dist/**
-  **/dist/**
+  **dist/**
   ```
 
 3. Then install the required dependencies to start the integration.
@@ -57,4 +57,4 @@ for more information.
 
 ## License
 
-MIT
+[MIT](https://github.com/Zumata/eslint-config-zumata/blob/master/LICENSE)
