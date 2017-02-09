@@ -1,8 +1,9 @@
 # eslint-config-zumata
 
-# [![npm version](https://badge.fury.io/js/eslint-config-zumata.svg)](http://badge.fury.io/js/eslint-config-zumata)
+> This package provides Airbnb's .eslintrc as an extensible shared config specifically for Zumata's Node.js modules.
 
-This package provides Airbnb's .eslintrc as an extensible shared config specifically for Zumata's Node.js modules.
+[![NPM version][npm-image]][npm-url]
+[![Dependency Status][daviddm-image]][daviddm-url]
 
 ## Use case
 
@@ -57,4 +58,10 @@ for more information.
 
 ## License
 
-[MIT](https://github.com/Zumata/eslint-config-zumata/blob/master/LICENSE)
+[MIT License](http://the-zumata-team.mit-license.org/) © The Zumata Team
+
+
+[npm-image]: https://badge.fury.io/js/eslint-config-zumata.svg
+[npm-url]: https://www.npmjs.com/package/eslint-config-zumata
+[daviddm-image]: https://david-dm.org/Zumata/eslint-config-zumata.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/Zumata/eslint-config-zumata

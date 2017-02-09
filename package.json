@@ -13,6 +13,7 @@
     "config",
     "zumata",
     "javascript",
+    "airbnb",
     "styleguide"
   ],
   "author": "motss <rong_sen.ng@zumata.com>",
@@ -23,7 +24,7 @@
   "homepage": "https://github.com/Zumata/eslint-config-zumata",
   "dependencies": {
     "eslint": "^3.8.1",
-    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-config-airbnb-base": "^11.1.0",
     "eslint-plugin-import": "^2.0.1"
   },
   "peerDependencies": {
@@ -31,7 +32,8 @@
     "eslint-plugin-import": "^2.0.1"
   },
   "engines": {
-    "node": "^6.5.0"
+    "node": "^6.9.1",
+    "npm": "^3.10.8"
   },
   "devDependencies": {
     "eslint": "^3.8.1"
