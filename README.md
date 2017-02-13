@@ -15,7 +15,10 @@ This `ESLint` config file does not aim to reinvent the wheel to suit our interna
 
 Please make sure that you have the followings installed on your machine:
 
--  `eslint > 3.4.0`
+-  `node >= 6.9.1` ___(In Zumata, we internally use the latest LTS version ([`node:boron`](https://nodejs.org/en/download/releases/)) for all our Node.js applications.)___
+-  `npm >= 3.10.8` ___(The minimum NPM version for [`node:boron`](https://nodejs.org/en/download/releases/).)___
+-  `eslint >= 3.8.0` ___(No guarantee it will work below the version specified here)___
+-  `eslint-plugin-import >= 2.0.1` ___(No guarantee it will work below the version specified here)___
 - [`ESLint extension for your favorite text editor`](http://eslint.org/docs/user-guide/integrations)
 
 ### Usage
