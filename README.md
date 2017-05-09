@@ -26,6 +26,7 @@ Please make sure that you have the followings installed on your machine:
 -  `npm >= 3.10.8` ___(The minimum NPM version for [`node:boron`](https://nodejs.org/en/download/releases/).)___
 -  `eslint >= 3.8.0` ___(No guarantee it will work below the version specified here)___
 -  `eslint-plugin-import >= 2.0.1` ___(No guarantee it will work below the version specified here)___
+-  `eslint-plugin-optimize-regex >= 1.1.1` ___(No guarantee it will work below the version specified here)___
 -  `eslint-plugin-security >= 1.3.0` ___(No guarantee it will work below the version specified here)___
 - [`ESLint extension for your favorite text editor`](http://eslint.org/docs/user-guide/integrations)
 
@@ -62,10 +63,11 @@ Please make sure that you have the followings installed on your machine:
 ## eslint-config-zumata
 
 Our default export contains all of our ESLint rules, including ECMAScript 6+. It requires the followings:-
-  - eslint
-  - eslint-config-airbnb-base.
-  - eslint-plugin-import
-  - eslint-plugin-security
+  - [eslint](https://github.com/eslint/eslint)
+  - [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+  - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import)
+  - [eslint-plugin-optimize-regex](https://github.com/brainmaestro/eslint-plugin-optimize-regex)
+  - [eslint-plugin-security](https://github.com/nodesecurity/eslint-plugin-security)
 
 See [Airbnb's Javascript styleguide](https://github.com/airbnb/javascript) and
 the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files)

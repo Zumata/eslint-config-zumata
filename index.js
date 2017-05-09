@@ -5,7 +5,8 @@ module.exports = {
   ].map(require.resolve),
   plugins: [
     'import',
-    'security'
+    'optimize-regex',
+    'security',
   ],
   rules: {},
 };
