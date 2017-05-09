@@ -7,7 +7,6 @@ npm-debug.log*
 *.env
 yarn-error.log*
 coverage/
-dist/
 dist/**/__mocks__/
 dist/**/__tests__/
 .nyc_output

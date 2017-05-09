@@ -4,10 +4,15 @@
   "description": "Zumata's ESLint Shareable Config",
   "keywords": [
     "airbnb",
+    "airbnb-base",
     "config",
     "eslint",
     "eslintconfig",
+    "import",
     "javascript",
+    "node",
+    "npm",
+    "security",
     "styleguide",
     "zumata"
   ],
@@ -22,13 +27,22 @@
     "type": "git",
     "url": "git@github.com:Zumata/eslint-config-zumata.git"
   },
+  "scripts": {
+    "check": "npm run nsp && npm run snyk",
+    "nsp": "nsp check",
+    "prepublish": "npm run check",
+    "snyk": "snyk test",
+    "test": "npm run check && node test/test"
+  },
   "dependencies": {
     "eslint": "^3.8.0",
     "eslint-config-airbnb-base": "^11.1.0",
-    "eslint-plugin-import": "^2.0.1"
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-security": "^1.3.0"
   },
   "devDependencies": {
-    "eslint": "^3.8.0"
+    "nsp": "^2.6.3",
+    "snyk": "^1.30.0"
   },
   "peerDependencies": {
     "eslint": "^3.8.0",
@@ -37,5 +51,6 @@
   "engines": {
     "node": ">= 6.9.1",
     "npm": ">= 3.10.8"
-  }
+  },
+  "snyk": true
 }

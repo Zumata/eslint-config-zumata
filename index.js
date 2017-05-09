@@ -4,9 +4,8 @@ module.exports = {
     'eslint-config-airbnb-base/rules/strict',
   ].map(require.resolve),
   plugins: [
-    'eslint-plugin-import',
+    'import',
+    'security'
   ],
-  rules: {
-    
-  },
+  rules: {},
 };
