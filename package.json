@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zumata",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Zumata's ESLint Shareable Config",
   "keywords": [
     "airbnb",
