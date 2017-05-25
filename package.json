@@ -32,8 +32,8 @@
     "nsp": "nsp check",
     "prepublish": "npm run snyk-protect && npm run check",
     "snyk": "snyk test",
-    "test": "npm run check && node test/test",
-    "snyk-protect": "snyk protect"
+    "snyk-protect": "snyk protect",
+    "test": "npm run check && node test/test"
   },
   "dependencies": {
     "eslint": "^3.8.0",
