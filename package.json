@@ -23,7 +23,7 @@
     "url": "https://github.com/Zumata/eslint-config-zumata/issues"
   },
   "license": "MIT",
-  "author": "motss <rong_sen.ng@zumata.com>",
+  "author": "The Zumata Team <gary.theis@zumata.com>",
   "main": "index.js",
   "repository": {
     "type": "git",
