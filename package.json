@@ -30,31 +30,27 @@
     "url": "git@github.com:Zumata/eslint-config-zumata.git"
   },
   "scripts": {
-    "check": "npm run nsp && npm run snyk",
+    "security": "npm run nsp",
     "nsp": "nsp check",
-    "prepublish": "npm run snyk-protect && npm run check",
-    "snyk": "snyk test",
-    "snyk-protect": "snyk protect",
-    "test": "snyk test && npm run check && node test/test"
+    "prepublish": "npm run security",
+    "test": "npm run security && node test/test"
   },
   "dependencies": {
     "eslint": "^4.0.0",
-    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-config-airbnb-base": "^12.0.0",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-optimize-regex": "^1.1.1",
     "eslint-plugin-security": "^1.4.0"
   },
   "devDependencies": {
-    "nsp": "^2.6.3",
-    "snyk": "^1.34.4"
+    "nsp": "^2.8.0"
   },
   "peerDependencies": {
-    "eslint": "^3.8.0",
-    "eslint-plugin-import": "^2.0.1"
+    "eslint": ">= 3.8.0",
+    "eslint-plugin-import": ">= 2.0.1"
   },
   "engines": {
     "node": ">= 6.9.1",
     "npm": ">= 3.10.8"
-  },
-  "snyk": true
+  }
 }
