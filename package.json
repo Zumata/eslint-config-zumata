@@ -32,7 +32,7 @@
   "scripts": {
     "security": "npm run nsp",
     "nsp": "nsp check",
-    "prepublish": "npm run security",
+    "prepare": "npm run security",
     "test": "npm run security && node test/test"
   },
   "dependencies": {
